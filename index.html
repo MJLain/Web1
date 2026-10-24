@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<table class="page-table">
+    <tr>
+        <td colspan="2" id="header">
+            <h1>Лабораторная работа №1</h1>
+            <p>ФИО: <b>Литус Даниил Ильич</b></p>
+            <p>Группа: <b>P3207</b></p>
+            <p>Вариант: <b>12621</b></p>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="graph-part">
+            <h2>Область</h2>
+            <canvas id="graph" width="420" height="420"></canvas>
+        </td>
+
+        <td class="form-part">
+            <h2>Проверка точки</h2>
+
+            <form id="point-form">
+                <table class="form-table">
+                    <tr>
+                        <td>X:</td>
+                        <td id="x-buttons">
+                            <button type="button" class="value-button x-button" data-value="-3">-3</button>
+                            <button type="button" class="value-button x-button" data-value="-2">-2</button>
+                            <button type="button" class="value-button x-button" data-value="-1">-1</button>
+                            <button type="button" class="value-button x-button" data-value="0">0</button>
+                            <button type="button" class="value-button x-button" data-value="1">1</button>
+                            <button type="button" class="value-button x-button" data-value="2">2</button>
+                            <button type="button" class="value-button x-button" data-value="3">3</button>
+                            <button type="button" class="value-button x-button" data-value="4">4</button>
+                            <button type="button" class="value-button x-button" data-value="5">5</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="y-input">Y:</label></td>
+                        <td>
+                            <input id="y-input" type="text" placeholder="от -3 до 3">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>R:</td>
+                        <td id="r-buttons">
+                            <button type="button" class="value-button r-button" data-value="1">1</button>
+                            <button type="button" class="value-button r-button" data-value="1.5">1.5</button>
+                            <button type="button" class="value-button r-button" data-value="2">2</button>
+                            <button type="button" class="value-button r-button" data-value="2.5">2.5</button>
+                            <button type="button" class="value-button r-button" data-value="3">3</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="form-buttons">
+                            <button type="submit" id="check-button">Проверить</button>
+                            <button type="button" id="clear-button">Очистить результаты</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="error-message"></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <h2>Результаты</h2>
+
+            <table id="results-table">
+                <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Попадание</th>
+                    <th>Дата и время</th>
+                </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 2%;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #eeeeee;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.page-table {
+    width: 96%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #999999;
+}
+
+.page-table > tbody > tr > td {
+    padding: 2%;
+    vertical-align: top;
+}
+
+#header {
+    font-family: serif;
+    color: #243b53;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #999999;
+}
+
+#header h1 {
+    font-size: 28px;
+    margin: 1%;
+}
+
+#header p {
+    margin: 0.5%;
+}
+
+.graph-part,
+.form-part {
+    width: 50%;
+}
+
+.graph-part {
+    border-right: 1px solid #bbbbbb;
+}
+
+#graph {
+    display: block;
+    margin: 2% auto;
+    border: 1px solid #777777;
+    background-color: white;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-table td {
+    padding: 2%;
+}
+
+.form-table input,
+.form-table button {
+    margin: 1%;
+}
+
+#y-input {
+    width: 70%;
+    padding: 2%;
+}
+
+button {
+    padding: 1.5% 2.5%;
+    border: 1px solid #777777;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.value-button {
+    background-color: #e3edf7;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
+.selected {
+    background-color: #4b89dc;
+    color: white;
+}
+
+.form-buttons {
+    text-align: center;
+}
+
+#error-message {
+    color: red;
+    min-height: 20px;
+    margin: 1%;
+}
+
+#results-table {
+    width: 100%;
+}
+
+#results-table th,
+#results-table td {
+    border: 1px solid #999999;
+    padding: 1%;
+    text-align: center;
+}
+
+#results-table th {
+    background-color: #dddddd;
+}
