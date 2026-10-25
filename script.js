@@ -63,8 +63,6 @@ form.addEventListener("submit", function (event) {
         return;
     }
 
-    const y = Number(yText.replace(",", "."));
-
     const normalizedY = yText.replace(",", ".");
 
     if (!isYInRange(normalizedY)) {
